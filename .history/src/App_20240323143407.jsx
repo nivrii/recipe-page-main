@@ -1,0 +1,34 @@
+import "./App.css";
+import omelette from "./assets/images/image-omelette.jpeg";
+
+function App() {
+  return (
+    <div className="container flex flex-col md:p-4 md:bg-eggshell w-screen min-h-max">
+      <div>
+        <img src={omelette} alt="omelette" className="w-screen md:w-auto" />
+      </div>
+      <div className="bg-white p-8">
+        <h1 className="text-left text-darkCharcoal text-4xl font-bold font-young">
+          Simple Omelette Recipe
+        </h1>
+        <p className="text-left font-outfit text-nutmeg mt-4 font-semibold">
+          An easy and quick dish, perfect for any meal. This classic omelette
+          combines beaten eggs cooked to perfection, optionally filled with your
+          choice of cheese, vegetables, or meats.
+        </p>
+      </div>
+      <div className="bg-roseWhite p-4 mx-8 rounded-xl">
+        <h1 className="text-left text-darkRaspberry text-2xl font-bold">
+          Preparation Time
+        </h1>
+        <ul className="list-disc p-8">
+          <li><span>Total:</span> Approximately 10 minutes</li>
+          <li><span>Preparation:</span> 5 minutes</li>
+          <li><span>Cooking:</span> 5 minutes</li>
+        </ul>
+      </div>
+    </div>
+  );
+}
+
+export default App;
